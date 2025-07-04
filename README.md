@@ -38,8 +38,8 @@ The script will then launch each Roblox instance in a new terminal window, pausi
 
 # some other stuff I wanna add to this
 
-- [ ] Task 1: Add windows support
-- [ ] Task 2: Make a windows ui
-- [ ] Task 3: Make a MacOs ui
-- [ ] Task 4: Make a website about it
+- [ ] : Add windows support
+- [ ] : Make a windows ui
+- [ ] : Make a MacOs ui
+- [ ] : Make a website about it
     
