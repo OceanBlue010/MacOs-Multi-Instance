@@ -1,7 +1,7 @@
 # Roblox Multi-Instance Launcher for macOS
 
 This script allows you to launch multiple instances of Roblox on macOS, each in its own separate terminal window.
-Features
+Features ( cause I don't know if it's possible from just doing it in 1 window )
 
     Multi-Instance Launch: Opens multiple Roblox instances.
 
@@ -28,7 +28,8 @@ The script will guide you through the process:
     "Do you want to open [X] Roblox instances, each in a new terminal window? (y/n):": Confirm your choice by typing y and pressing Enter. If you type n, the script will exit.
 
 The script will then launch each Roblox instance in a new terminal window, pausing for 10 seconds between each launch.
-Important Reminders
+
+# Important Reminders
 
     Do NOT close the terminal windows where Roblox instances are running, or the Roblox instance associated with that terminal will close.
 
