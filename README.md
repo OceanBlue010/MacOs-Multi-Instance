@@ -1,4 +1,4 @@
-#Roblox Multi-Instance Launcher for macOS
+# Roblox Multi-Instance Launcher for macOS
 
 This script allows you to launch multiple instances of Roblox on macOS, each in its own separate terminal window.
 Features
