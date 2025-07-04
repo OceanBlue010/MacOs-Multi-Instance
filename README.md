@@ -34,3 +34,13 @@ The script will then launch each Roblox instance in a new terminal window, pausi
     Do NOT close the terminal windows where Roblox instances are running, or the Roblox instance associated with that terminal will close.
 
     To use separate accounts for each instance, you will need to manually sign in and sign out within each Roblox instance as needed.
+
+
+# some other stuff I wanna add to this
+
+    Windows support
+    Windows ui
+    Mac ui
+    make it loook cool 
+    make a whole website about it
+    
