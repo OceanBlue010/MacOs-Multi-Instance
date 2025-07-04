@@ -38,9 +38,8 @@ The script will then launch each Roblox instance in a new terminal window, pausi
 
 # some other stuff I wanna add to this
 
-    Windows support
-    Windows ui
-    Mac ui
-    make it loook cool 
-    make a whole website about it
+- [] Add windows support
+- [] Make a windows ui
+- [] Make a MacOs ui
+- [] Make a website about it
     
