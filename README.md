@@ -17,7 +17,7 @@ How to Use
 
 To run the script directly from GitHub, open your Terminal and execute the following command:
 
-bash <(curl -s https://raw.githubusercontent.com/OceanBlue010/MacOs-Multi-Instance/refs/heads/main/multi-instance)
+    bash <(curl -s https://raw.githubusercontent.com/OceanBlue010/MacOs-Multi-Instance/refs/heads/main/multi-instance)
 
 Follow the Prompts
 
