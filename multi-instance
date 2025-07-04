@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# This script launches multiple instances of Roblox on macOS.
+
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+echo " " 
+
+# --- Configuration ---
+ROBLOX_EXECUTABLE_PATH="/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
+ROBLOX_PROCESS_NAME="RobloxPlayer"
+# Delay between launching each instance.
+INSTANCE_LAUNCH_DELAY=10 # seconds
+# A single delay after launching all instances to allow them to start up before final check.
+POST_LAUNCH_CHECK_DELAY=5 # seconds (can be shorter as individual delays already exist)
+
+# --- Script Logic ---
+
+echo "--- Roblox Multi-Instance Launcher ---"
+echo "Note: It opens multiple instances of Roblox without closing"
+echo ""
+
+# Loop until valid input is received for number of instances
+while true; do
+    read -p "How many Roblox instances do you want to open (1-9)? " num_instances
+
+    if [[ "$num_instances" =~ ^[1-9]$ ]]; then
+        break
+    else
+        echo "Invalid input. Please enter a number between 1 and 9."
+    fi
+done
+
+echo ""
+
+# Ask for permission to open multiple terminal windows
+read -p "Do you want to open $num_instances Roblox instances, each in a new terminal window? (y/n): " confirm_launch
+if [[ ! "$confirm_launch" =~ ^[Yy]$ ]]; then
+    echo "Launch cancelled. Exiting."
+    exit 0
+fi
+
+echo ""
+echo "Attempting to open $num_instances instances of Roblox in separate terminal windows..."
+echo ""
+
+# Loop to open instances sequentially in new terminal windows
+for (( i=1; i<=$num_instances; i++ )); do
+    echo "Launching instance $i of $num_instances..."
+    osascript -e 'tell application "Terminal" to do script "'"$ROBLOX_EXECUTABLE_PATH"'"'
+
+    # Wait for the current instance to start before launching the next, unless it's the last one.
+    if (( i < num_instances )); then
+        echo "Waiting $INSTANCE_LAUNCH_DELAY seconds before launching the next instance..."
+        sleep "$INSTANCE_LAUNCH_DELAY"
+    fi
+done
+
+echo "All launch commands sent. Waiting $POST_LAUNCH_CHECK_DELAY seconds for processes to stabilize before final check..."
+sleep "$POST_LAUNCH_CHECK_DELAY"
+
+# Check if the expected number of Roblox processes are running
+num_roblox_processes=$(pgrep -x "$ROBLOX_PROCESS_NAME" | wc -l)
+
+if (( num_roblox_processes >= num_instances )); then
+    echo "Successfully launched at least $num_instances Roblox instances (processes detected)."
+else
+    echo "Warning: Expected $num_instances Roblox instances, but only $num_roblox_processes processes were detected."
+    echo "Some instances may not have launched successfully. Please check manually."
+fi
+
+echo ""
+echo "Script finished."
+echo ""
+echo "IMPORTANT REMINDERS:"
+echo "1. Do NOT close the terminal windows where Roblox instances are running, or the Roblox instance will close."
+echo "2. To use separate accounts for each instance, you will need to manually sign in and sign out within each Roblox instance as needed."
+
+
