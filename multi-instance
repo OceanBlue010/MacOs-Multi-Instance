@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script launches multiple instances of Roblox on macOS.
+# the entire echo is to seperate it and stuff ya
 
 echo " " 
 echo " " 
@@ -91,6 +92,7 @@ echo "Script finished."
 echo ""
 echo "IMPORTANT REMINDERS:"
 echo "1. Do NOT close the terminal windows where Roblox instances are running, or the Roblox instance will close."
+echo " Made by OceanBlue010 on github " 
 echo "2. To use separate accounts for each instance, you will need to manually sign in and sign out within each Roblox instance as needed."
 
 
