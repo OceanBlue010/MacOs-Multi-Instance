@@ -46,4 +46,7 @@ The script will then launch each Roblox instance in a new terminal window, pausi
 - [ ] : Make a MacOs ui
 - [√] : Make a website about it
 
+Making windows ui is easier since it uses c# and I know it a little bit better than whatever MacOs has
+Adding windows support is uh harder to say the least since I genuinly don't know how to add multi instance support D:
+
     
