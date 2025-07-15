@@ -1,7 +1,5 @@
 # Roblox Multi-Instance Launcher for macOS
 
-Website: https://oceanblue010.github.io/MCI.github.io/ 
-(Getting worked on as of today and will fix some issues with it and maybe rewriting this readme.md and the other website :D)
 
 This script allows you to launch multiple instances of Roblox on macOS, each in its own separate terminal window.
 Features ( cause I don't know if it's possible from just doing it in 1 window )
@@ -45,6 +43,7 @@ The script will then launch each Roblox instance in a new terminal window, pausi
 - [ ] : Make a windows ui
 - [ ] : Make a MacOs ui
 - [√] : Make a website about it
+( I gave up on the website lowk )
 
 Making windows ui is easier since it uses c# and I know it a little bit better than whatever MacOs has
 Adding windows support is uh harder to say the least since I genuinly don't know how to add multi instance support D:
