@@ -1,3 +1,6 @@
+# Issue
+You need to join a roblox game on 1 account then on the other instances put another account on it then join the same game or another game and repeat for each instance 
+
 # Roblox Multi-Instance Launcher for macOS
 
 
