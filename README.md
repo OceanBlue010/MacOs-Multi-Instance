@@ -39,13 +39,6 @@ The script will then launch each Roblox instance in a new terminal window, pausi
 
 # some other stuff I wanna add to this
 
-- [ ] : Add windows support
-- [ ] : Make a windows ui
 - [ ] : Make a MacOs ui
-- [√] : Make a website about it
-( I gave up on the website lowk )
-
-Making windows ui is easier since it uses c# and I know it a little bit better than whatever MacOs has
-Adding windows support is uh harder to say the least since I genuinly don't know how to add multi instance support D:
 
     
